@@ -12,7 +12,7 @@ import {
   SET_CURRENT_USER,
   LOGOUT_USER,
   NEW_MESSAGE
-} from './actions'
+} from './types'
 
 export const fetchCurrentGames = () => dispatch => {
   dispatch({ type: ASYNC_START });

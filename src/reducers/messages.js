@@ -1,7 +1,7 @@
 import {
   LOAD_GAME,
   NEW_MESSAGE
-} from '../actions/actions'
+} from '../actions/types'
 
 const initialState = [];
 

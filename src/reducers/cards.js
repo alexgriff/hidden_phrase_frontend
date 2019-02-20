@@ -2,7 +2,7 @@ import {
   LOAD_GAME,
   UPDATE_BOARD,
   REVEAL_IDENTITY
-} from '../actions/actions'
+} from '../actions/types'
 
 export default (state, action) => {
   switch (action.type) {

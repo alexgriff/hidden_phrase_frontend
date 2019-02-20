@@ -1,7 +1,7 @@
 import {
   NEW_CLUE,
   LOAD_GAME
-} from '../actions/actions'
+} from '../actions/types'
 
 export default (state, action) => {
   switch (action.type) {

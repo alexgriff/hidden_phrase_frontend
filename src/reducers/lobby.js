@@ -2,7 +2,7 @@ import {
   FETCH_CURRENT_GAMES,
   NEW_GAME,
   PLAYER_JOIN
-} from '../actions/actions'
+} from '../actions/types'
 
 const initialState = { games: [] };
 

@@ -1,7 +1,7 @@
 import {
   SET_CURRENT_USER,
   LOGOUT_USER
-} from '../actions/actions'
+} from '../actions/types'
 
 const initialState = { currentUser: {} };
 

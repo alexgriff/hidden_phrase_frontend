@@ -1,7 +1,7 @@
 import {
   LOAD_GAME,
   ADD_PLAYER
-} from '../actions/actions'
+} from '../actions/types'
 
 export default (state, action) => {
   switch (action.type) {

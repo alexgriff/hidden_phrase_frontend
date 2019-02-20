@@ -1,6 +1,6 @@
 import {
   LOAD_GAME
-} from '../actions/actions'
+} from '../actions/types'
 
 const getPositions = (identity, cards) => {
   return cards

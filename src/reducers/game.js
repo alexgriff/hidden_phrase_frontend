@@ -11,7 +11,7 @@ import {
   NEW_CLUE,
   ADD_PLAYER,
   NEW_MESSAGE
-} from '../actions/actions'
+} from '../actions/types'
 
 const initialState = {
   id: null,

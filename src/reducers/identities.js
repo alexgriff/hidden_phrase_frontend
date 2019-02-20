@@ -1,3 +1,7 @@
+import {
+  LOAD_GAME
+} from '../actions/actions'
+
 const getPositions = (identity, cards) => {
   return cards
     .filter(card => {
@@ -11,7 +15,7 @@ const getPositions = (identity, cards) => {
 
 export default (state, action) => {
   switch (action.type) {
-    case 'LOAD_GAME':
+    case LOAD_GAME:
       return {
         blue_spies: getPositions('blue_spy', action.cards),
         red_spies: getPositions('red_spy', action.cards),

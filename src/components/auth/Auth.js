@@ -14,14 +14,13 @@ class Auth extends Component {
   render() {
     return (
       <div>
-        <Login />
         <h4>
           Don't have an account?{' '}
           <a onClick={this.handleClick} href="/">
-            Click Here to Sign Up.
+            Click Here to {this.state.signup ? <span>Log In</span> : <span>Sign Up</span>} 
           </a>
         </h4>
-        {this.state.signup ? <Signup /> : null}
+        {this.state.signup ? <Signup /> : <Login />}
       </div>
     );
   }

@@ -15,7 +15,7 @@ class Auth extends Component {
     return (
       <div>
         <h4>
-          <div>
+          <div >
             {this.state.signup ? <div>Already signed up? <a onClick={this.handleClick} href="/">Log In</a></div> : <div>Don't have an account? <a onClick={this.handleClick} href="/">Sign Up</a></div>}
           </div>
         </h4>

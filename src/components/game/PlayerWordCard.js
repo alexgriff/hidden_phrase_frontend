@@ -6,6 +6,7 @@ import { revealIdentity } from '../../actions';
 const PlayerWordCard = ({ card, revealIdentity, gameId }) => {
   return (
     <WordCard
+      player={true}
       revealIdentity={revealIdentity}
       card={card}
       identity={card.known ? card.identity : false}

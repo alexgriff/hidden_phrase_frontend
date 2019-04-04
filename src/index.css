@@ -64,6 +64,12 @@ div.ui.card.word-card {
   min-height: 12vh;
   max-height: 14vh;
 }
+div.cardHover:hover {
+  margin-left: 5px;
+  color: #666;
+  border: inherit;
+  box-shadow: -2px 1px 4px 2px #999
+}
 
 div.ui.card.word-card div.content {
   padding-left: 7%;
@@ -142,11 +148,4 @@ span.shrug {
 
 span.codename {
   /*font-size: 125%;*/
-}
-
-div.cardHover:hover {
-  margin-left: 5px;
-  color: #666;
-  border: inherit;
-  box-shadow: -2px 1px 4px 2px #999 
 }

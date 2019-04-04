@@ -145,5 +145,8 @@ span.codename {
 }
 
 div.cardHover:hover {
-  visibility: hidden
+  margin-left: 5px;
+  color: #666;
+  border: inherit;
+  box-shadow: -2px 1px 4px 2px #999 
 }

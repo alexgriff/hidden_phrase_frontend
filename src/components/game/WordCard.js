@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 class WordCard extends Component {
-  state = { hovering: false, updated: false };
+  state = {
+    hovering: false,
+    updated: false
+  };
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.card.known !== this.props.card.known) {
@@ -64,7 +67,8 @@ class WordCard extends Component {
       : null;
 
     return (
-      <div onClick={clickHandler} className={cssClass}>
+      <div onClick={clickHandler}
+           className={`${cssClass}  cardHover`}>
         <div className="content">
           <div className="center aligned word">
             <span className="codename">{card.word}</span>

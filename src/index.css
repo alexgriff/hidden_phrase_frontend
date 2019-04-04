@@ -143,3 +143,7 @@ span.shrug {
 span.codename {
   /*font-size: 125%;*/
 }
+
+div.cardHover:hover {
+  visibility: hidden
+}

@@ -52,6 +52,17 @@ class Signup extends React.Component {
       });
   };
 
+  shouldShowWarning(){
+    if(this.state.passwordMatch){
+      return false
+    } else if (this.state.fields.passwordConfirmation === '') {
+      return false
+    }
+    else {
+      return true
+    }
+  }
+
   renderWarning() {
     const formatWarning = msg => {
       const key = Object.keys(msg)[0];
@@ -88,11 +99,6 @@ class Signup extends React.Component {
               />
             </div>
             <div className="ui field">
-              {passwordMatch ? null : (
-                <div className="ui error message">
-                  <p>Your passwords do not match</p>
-                </div>
-              )}
               <label>Password</label>
               <input
                 name="signupPassword"
@@ -112,6 +118,11 @@ class Signup extends React.Component {
                 onChange={this.handleChange}
               />
             </div>
+            {this.shouldShowWarning() && (
+              <div className="ui error message">
+              <p>Your passwords do not match</p>
+              </div>
+            )}
             <button
               disabled={!passwordMatch}
               type="submit"
